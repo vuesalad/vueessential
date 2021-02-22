@@ -28,4 +28,7 @@ module.exports = {
       return page;
     });
   },
+  devServer: {
+    before: require('./mock/mock-server.js')
+  }
 };
